@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../glitter-code-galaxy/supabase"
+		}
+	],
+	"settings": {}
+}
