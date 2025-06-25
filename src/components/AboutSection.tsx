@@ -26,19 +26,15 @@ const AboutSection: React.FC = () => {
                 Passionate Developer & Innovator
               </h3>
               <p className="text-slate-300 leading-relaxed mb-6">
-                With over 5 years of experience in software development, I specialize in creating 
-                robust full-stack applications and implementing cutting-edge machine learning solutions. 
-                My journey began with curiosity about how things work, and it has evolved into a 
-                passion for building technology that makes a difference.
+               I’m Ayush Sahu, a Mechanical Engineering student at IIT Tirupati with a passion for AI, backend development, and innovation.
+
               </p>
               <p className="text-slate-300 leading-relaxed mb-6">
-                I thrive at the intersection of web development and artificial intelligence, 
-                combining traditional software engineering principles with modern ML techniques 
-                to create intelligent, scalable applications.
+               Currently working as an intern at AxoryAI, Bengaluru, where I contribute to real-world machine learning and software projects.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, contributing to 
-                open-source projects, or sharing knowledge through technical blogs and mentoring.
+               I specialize in building intelligent systems using Flask, FastAPI, and deep learning to solve impactful problems.
+
               </p>
             </div>
           </div>
