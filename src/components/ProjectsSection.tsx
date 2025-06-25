@@ -1,6 +1,6 @@
 
-import React from 'react';
 import { useProjects } from '@/hooks/useProjects';
+import React from 'react';
 
 const ProjectsSection: React.FC = () => {
   const { data: projects = [], isLoading, error } = useProjects();
@@ -94,7 +94,7 @@ const ProjectsSection: React.FC = () => {
             >
               <div className="relative overflow-hidden">
                 <img
-                  src={project.image_url || '/placeholder.svg'}
+                  src={project.image_url || '/ayush_pic.png'}
                   alt={project.title || ''}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />

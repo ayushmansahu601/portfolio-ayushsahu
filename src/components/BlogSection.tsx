@@ -1,6 +1,6 @@
 
-import React from 'react';
 import { useFeaturedBlogPost, useRegularBlogPosts } from '@/hooks/useBlogPosts';
+import React from 'react';
 
 const BlogSection: React.FC = () => {
   const { data: featuredPost, isLoading: featuredLoading, error: featuredError } = useFeaturedBlogPost();
@@ -62,7 +62,7 @@ const BlogSection: React.FC = () => {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden">
                   <img
-                    src={featuredPost.image_url || '/placeholder.svg'}
+                    src={featuredPost.image_url || '/ayush_pic.png'}
                     alt={featuredPost.title || ''}
                     className="w-full h-full object-cover min-h-[300px] transition-transform duration-500 hover:scale-110"
                   />
@@ -96,9 +96,9 @@ const BlogSection: React.FC = () => {
                       </span>
                     ))}
                   </div>
-                  <button className="self-start px-6 py-3 bg-gradient-to-r from-tech-cyan to-tech-purple text-white rounded-full font-medium hover:shadow-lg hover:shadow-tech-cyan/25 transition-all duration-300 hover:scale-105">
+                  {/* <button className="self-start px-6 py-3 bg-gradient-to-r from-tech-cyan to-tech-purple text-white rounded-full font-medium hover:shadow-lg hover:shadow-tech-cyan/25 transition-all duration-300 hover:scale-105">
                     Read Full Article
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -115,7 +115,7 @@ const BlogSection: React.FC = () => {
             >
               <div className="relative overflow-hidden">
                 <img
-                  src={post.image_url || '/placeholder.svg'}
+                  src={post.image_url || '/ayush_pic.png'}
                   alt={post.title || ''}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -150,7 +150,7 @@ const BlogSection: React.FC = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <button className="text-tech-cyan font-medium text-sm hover:text-tech-purple transition-colors">
                     Read More →
                   </button>
@@ -166,7 +166,7 @@ const BlogSection: React.FC = () => {
                       </svg>
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

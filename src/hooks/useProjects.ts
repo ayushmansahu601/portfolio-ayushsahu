@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { collection, getDocs, orderBy, query, where, limit } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import type { Project } from '@/types/database';
+import { collection, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
 
 // Default projects data
 const defaultProjects: Project[] = [
@@ -10,7 +10,7 @@ const defaultProjects: Project[] = [
     title: 'Tirutsava Website',
     description: 'Developed for IIT Tirupati\'s annual techno-cultural fest. Full-stack website with event registration system and integrated payment processing using Razorpay.',
     technologies: ['Next.js', 'FastAPI', 'Razorpay', 'Tailwind CSS', 'Docker'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_pic.png',
     github_url: '#',
     live_url: '#',
     category: 'fullstack',
@@ -25,7 +25,7 @@ const defaultProjects: Project[] = [
     title: 'Mentor Data Web Crawler',
     description: 'Built a highly efficient web crawler leveraging asynchronous programming with Crawl4AI to scrape mentor data from websites and extract information using LLM.',
     technologies: ['Python', 'Crawl4AI', 'LLM (GROQ)', 'CSV', 'Async Programming'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_pic.png',
     github_url: '#',
     live_url: '#',
     category: 'ml',
@@ -40,7 +40,7 @@ const defaultProjects: Project[] = [
     title: 'PatientManager',
     description: 'Hackathon project to streamline patient data entry for hospitals. Features automatic family member prompts for glaucoma patients and WhatsApp notifications.',
     technologies: ['React', 'SQLite', 'Python', 'Flask', 'Bootstrap', 'Twilio'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_pic.png',
     github_url: '#',
     live_url: '#',
     category: 'fullstack',
@@ -55,7 +55,7 @@ const defaultProjects: Project[] = [
     title: 'AsapMusic',
     description: 'Music website developed using React and integrated with Spotify API for music streaming and playlist management.',
     technologies: ['React', 'Spotify API', 'JavaScript', 'CSS'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_pic.png',
     github_url: '#',
     live_url: '#',
     category: 'web',

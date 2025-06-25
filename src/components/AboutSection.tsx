@@ -67,7 +67,7 @@ const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 text-center">
+        {/* <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="glass-card p-6 hover-glow transition-all duration-300">
             <div className="text-4xl font-bold text-tech-cyan mb-2">50+</div>
             <div className="text-slate-300">Projects Completed</div>
@@ -80,7 +80,7 @@ const AboutSection: React.FC = () => {
             <div className="text-4xl font-bold text-tech-blue mb-2">100%</div>
             <div className="text-slate-300">Client Satisfaction</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

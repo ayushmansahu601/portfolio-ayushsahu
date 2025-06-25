@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import { collection, getDocs, orderBy, query, where, limit } from 'firebase/firestore';
 import { db } from '@/lib/firebase';
 import type { BlogPost } from '@/types/database';
+import { collection, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
 
 // Default blog posts data
 const defaultBlogPosts: BlogPost[] = [
@@ -14,7 +14,7 @@ const defaultBlogPosts: BlogPost[] = [
     date: '2024-01-20',
     read_time: '8 min read',
     tags: ['Machine Learning', 'Python', 'Docker', 'DevOps'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_side.png',
     featured: true,
     published: true,
     created_at: new Date().toISOString(),
@@ -30,7 +30,7 @@ const defaultBlogPosts: BlogPost[] = [
     date: '2024-01-15',
     read_time: '12 min read',
     tags: ['Computer Vision', 'OpenCV', 'YOLO', 'Python'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_pic.png',
     featured: false,
     published: true,
     created_at: new Date().toISOString(),
@@ -46,7 +46,7 @@ const defaultBlogPosts: BlogPost[] = [
     date: '2024-01-10',
     read_time: '10 min read',
     tags: ['React', 'JavaScript', 'Architecture', 'Frontend'],
-    image_url: '/placeholder.svg',
+    image_url: '/ayush_pic.png',
     featured: false,
     published: true,
     created_at: new Date().toISOString(),
