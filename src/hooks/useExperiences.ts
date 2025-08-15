@@ -6,56 +6,74 @@ import type { Experience } from '@/types/database';
 // Default experiences data
 const defaultExperiences: Experience[] = [
   {
-    id: '1',
-    company: 'Flaredge',
-    position: 'Developer',
-    duration: 'August 2024 - Present',
-    location: 'Tirupati, India',
-    description: 'Leading the development of a full-stack web application using React.js and Firebase, creating a platform for mentors and influencers to showcase their profiles to a wider audience.',
-    technologies: ['React.js', 'Firebase', 'Firestore', 'Mobile Responsive Design'],
-    achievements: [
-      'Led development of full-stack web application for mentor/influencer platform',
-      'Optimized Firebase Firestore data retrieval performance',
-      'Improved mobile responsiveness increasing user engagement'
-    ],
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    display_order: 1
-  },
-  {
-    id: '2',
-    company: 'Alkeynes Global Solutions INDIA LLP',
-    position: 'Frontend Developer Intern',
-    duration: 'May 2024 - July 2024',
-    location: 'New Delhi',
-    description: 'Contributed to the development of a full-stack web application using the MERN stack, collaborating with a team of four to design, implement, and test key features to enhance user experience.',
-    technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'MERN Stack'],
-    achievements: [
-      'Collaborated with team of 4 to develop MERN stack application',
-      'Improved website mobile responsiveness across devices',
-      'Enhanced performance and accessibility per Google Web Dev metrics'
-    ],
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    display_order: 2
-  },
-  {
-    id: '3',
-    company: 'Layer Build Private Limited',
-    position: 'Software Developer',
-    duration: 'Dec. 2023 - Feb. 2024',
-    location: 'Remote',
-    description: 'Developed a GUI-based application using Qt Designer and C++ to automate road-test report generation by inputting various highway material test data.',
-    technologies: ['Qt Designer', 'C++', 'wkhtmltopdf', 'PDF Generation'],
-    achievements: [
-      'Developed GUI application for automated road-test report generation',
-      'Integrated wkhtmltopdf library for professional PDF exports',
-      'Streamlined report generation process minimizing manual errors'
-    ],
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    display_order: 3
-  }
+  id: '1',
+  company: 'AxoryAI',
+  position: 'Software Developer Intern',
+  duration: 'June 2025 - Present',
+  location: 'Remote',
+  description: 'Developed and deployed the backend infrastructure for a deepfake detection system, integrating a machine learning model using FastAPI and Python, and ensuring scalability and secure access.',
+  technologies: ['FastAPI', 'Python', 'Machine Learning', 'Supabase', 'Docker', 'AWS EC2', 'GPU Instances'],
+  achievements: [
+    'Designed and implemented RESTful APIs with token-based authentication to serve the ML model',
+    'Built a Python SDK enabling seamless client-side integration for third-party developers',
+    'Integrated Supabase for user authentication, results storage, and usage analytics',
+    'Dockerized the application for smooth deployment and scalability on AWS EC2 with GPU optimization'
+  ],
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  display_order: 1
+},
+{
+  id: '2',
+  company: 'Alkeynes Global Solutions INDIA LLP',
+  position: 'Frontend Developer Intern',
+  duration: 'May 2024 - July 2024',
+  location: 'New Delhi (Hybrid)',
+  description: 'Worked on internal prototypes and client-facing web projects, gaining exposure to UI/UX workflows and frontend development.',
+  technologies: ['Figma', 'PHP', 'HTML', 'CSS', 'JavaScript'],
+  achievements: [
+    'Collaborated on UI/UX design workflows using Figma for prototypes and concepts',
+    'Implemented frontend adjustments and new features for a client website built with PHP'
+  ],
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  display_order: 2
+},
+{
+  id: '3',
+  company: 'Flaredge',
+  position: 'Developer',
+  duration: 'August 2024 - Present',
+  location: 'Tirupati, India',
+  description: 'Developing a personal portfolio and freelancing platform to showcase past web development work and attract clients.',
+  technologies: ['React', 'Firebase', 'FastAPI', 'Netlify', 'AWS EC2'],
+  achievements: [
+    'Designed and developed responsive websites for clients using modern web technologies',
+    'Collaborated with clients to understand requirements and deliver tailored solutions',
+    'Managed deployment, domain setup, and optimization using Netlify, Firebase Hosting, and AWS EC2'
+  ],
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  display_order: 3
+},
+{
+  id: '4',
+  company: 'Layer Build Private Limited',
+  position: 'Software Developer',
+  duration: 'Dec 2023 - Feb 2024',
+  location: 'IIT Tirupati',
+  description: 'Developed a GUI-based application to automate highway material road-test report generation using Qt Designer and C++.',
+  technologies: ['Qt Designer', 'C++', 'wkhtmltopdf'],
+  achievements: [
+    'Automated road-test report generation from multiple highway material test inputs',
+    'Integrated wkhtmltopdf for exporting professional-grade PDFs',
+    'Streamlined reporting workflows, reducing manual errors and processing time'
+  ],
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  display_order: 4
+}
+
 ];
 
 export const useExperiences = () => {

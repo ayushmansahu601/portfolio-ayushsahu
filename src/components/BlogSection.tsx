@@ -50,9 +50,9 @@ const BlogSection: React.FC = () => {
             Latest Insights
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-tech-cyan to-tech-purple mx-auto rounded-full mb-8"></div>
-          <p className="text-slate-400 max-w-2xl mx-auto">
-            Sharing knowledge about full-stack development, machine learning, and emerging technologies
-          </p>
+          {/* <p className="text-slate-400 max-w-2xl mx-auto">
+            
+          </p> */}
         </div>
 
         {/* Featured Post */}

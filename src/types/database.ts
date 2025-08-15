@@ -21,7 +21,7 @@ export interface Project {
   image_url: string | null;
   github_url: string | null;
   live_url: string | null;
-  category: 'fullstack' | 'ml' | 'automation' | 'web';
+  category: 'fullstack' | 'ml' | 'automation' | 'web' |null;
   date: string;
   featured: boolean;
   created_at: string;

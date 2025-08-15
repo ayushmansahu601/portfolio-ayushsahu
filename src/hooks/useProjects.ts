@@ -6,13 +6,44 @@ import { useEffect, useState } from 'react';
 // Default projects data
 const defaultProjects: Project[] = [
   {
+  id: '2',
+  title: 'Accent Recognition Using CNN & MFCCs',
+  description: 'Built a deep learning system to detect the speaker’s native accent (Arabic, Mandarin, English) from voice audio. Developed a modular pipeline for audio preprocessing, MFCC feature extraction, CNN model training, and evaluation. Achieved high accuracy through careful dataset filtering and feature engineering.',
+  technologies: ['Python', 'TensorFlow (Keras)', 'Librosa', 'MFCC', 'Matplotlib'],
+  image_url: '/ayush_pic.png',
+  github_url: 'https://github.com/ayushmansahu601/Speech-Recognition',
+  live_url: '#',
+  category: 'ml',
+  date: '2025-07-01',
+  featured: true,
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  display_order: 2
+},
+{
+  id: '3',
+  title: 'Data Warehousing & ETL Pipeline Project',
+  description: 'Implemented a three-layer ETL architecture (staging, integration, presentation) for CRM and ERP datasets. Designed SQL scripts for data cleaning, transformation, surrogate key generation, and created dimension/fact views to enable analytical queries. Applied ETL best practices for data validation, deduplication, and referential integrity checks.',
+  technologies: ['SQL Server', 'T-SQL', 'Data Warehousing'],
+  image_url: '/ayush_pic.png',
+  github_url: 'https://github.com/ayushmansahu601/dataWareHouse',
+  live_url: '#',
+  category: 'ml',
+  date: '2025-08-01',
+  featured: true,
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+  display_order: 3
+},
+
+  {
     id: '1',
     title: 'Tirutsava Website',
     description: 'Developed for IIT Tirupati\'s annual techno-cultural fest. Full-stack website with event registration system and integrated payment processing using Razorpay.',
     technologies: ['Next.js', 'FastAPI', 'Razorpay', 'Tailwind CSS', 'Docker'],
     image_url: '/ayush_pic.png',
     github_url: '#',
-    live_url: '#',
+    live_url: 'https://tirutsava.com/',
     category: 'fullstack',
     date: '2024-11-01',
     featured: true,
@@ -49,21 +80,6 @@ const defaultProjects: Project[] = [
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
     display_order: 3
-  },
-  {
-    id: '4',
-    title: 'AsapMusic',
-    description: 'Music website developed using React and integrated with Spotify API for music streaming and playlist management.',
-    technologies: ['React', 'Spotify API', 'JavaScript', 'CSS'],
-    image_url: '/ayush_pic.png',
-    github_url: '#',
-    live_url: '#',
-    category: 'web',
-    date: '2023-09-01',
-    featured: false,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    display_order: 4
   }
 ];
 

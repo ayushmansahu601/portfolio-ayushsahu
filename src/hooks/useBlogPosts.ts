@@ -21,38 +21,38 @@ const defaultBlogPosts: BlogPost[] = [
     updated_at: new Date().toISOString(),
     display_order: 1
   },
-  {
-    id: '2',
-    title: 'Real-time Object Detection with OpenCV and YOLO',
-    excerpt: 'A comprehensive guide to implementing real-time object detection using OpenCV and YOLO algorithms.',
-    content: '',
-    author: 'Ayushman Sahu',
-    date: '2024-01-15',
-    read_time: '12 min read',
-    tags: ['Computer Vision', 'OpenCV', 'YOLO', 'Python'],
-    image_url: '/ayush_pic.png',
-    featured: false,
-    published: true,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    display_order: 2
-  },
-  {
-    id: '3',
-    title: 'Modern React Patterns for Large Scale Applications',
-    excerpt: 'Explore advanced React patterns and best practices for building maintainable large-scale applications.',
-    content: '',
-    author: 'Ayushman Sahu',
-    date: '2024-01-10',
-    read_time: '10 min read',
-    tags: ['React', 'JavaScript', 'Architecture', 'Frontend'],
-    image_url: '/ayush_pic.png',
-    featured: false,
-    published: true,
-    created_at: new Date().toISOString(),
-    updated_at: new Date().toISOString(),
-    display_order: 3
-  }
+  // {
+  //   id: '2',
+  //   title: 'Real-time Object Detection with OpenCV and YOLO',
+  //   excerpt: 'A comprehensive guide to implementing real-time object detection using OpenCV and YOLO algorithms.',
+  //   content: '',
+  //   author: 'Ayushman Sahu',
+  //   date: '2024-01-15',
+  //   read_time: '12 min read',
+  //   tags: ['Computer Vision', 'OpenCV', 'YOLO', 'Python'],
+  //   image_url: '/ayush_pic.png',
+  //   featured: false,
+  //   published: true,
+  //   created_at: new Date().toISOString(),
+  //   updated_at: new Date().toISOString(),
+  //   display_order: 2
+  // },
+  // {
+  //   id: '3',
+  //   title: 'Modern React Patterns for Large Scale Applications',
+  //   excerpt: 'Explore advanced React patterns and best practices for building maintainable large-scale applications.',
+  //   content: '',
+  //   author: 'Ayushman Sahu',
+  //   date: '2024-01-10',
+  //   read_time: '10 min read',
+  //   tags: ['React', 'JavaScript', 'Architecture', 'Frontend'],
+  //   image_url: '/ayush_pic.png',
+  //   featured: false,
+  //   published: true,
+  //   created_at: new Date().toISOString(),
+  //   updated_at: new Date().toISOString(),
+  //   display_order: 3
+  // }
 ];
 
 export const useBlogPosts = () => {

@@ -3,11 +3,43 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   const skills = [
-    { category: 'Frontend', items: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Three.js'] },
-    { category: 'Backend', items: ['Node.js', 'Python', 'Django', 'FastAPI', 'PostgreSQL'] },
-    { category: 'ML/AI', items: ['TensorFlow', 'PyTorch', 'OpenCV', 'Scikit-learn', 'Pandas'] },
-    { category: 'Cloud/DevOps', items: ['AWS', 'Docker', 'Firebase', 'Vercel', 'Git'] },
-  ];
+  {
+    category: 'Programming',
+    items: ['C/C++', 'Python', 'JavaScript']
+  },
+  {
+    category: 'Data Analytics',
+    items: [
+      'SQL',
+      'MongoDB',
+      'Basic Machine Learning',
+      'Pandas',
+      'NumPy',
+      'Data Visualization (Matplotlib, Seaborn)',
+      'LangChain'
+    ]
+  },
+  {
+    category: 'Web Technologies',
+    items: [
+      'React',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'Flask',
+      'FastAPI',
+      'Firebase',
+      'Bootstrap',
+      'CI/CD',
+      'DSA'
+    ]
+  },
+  {
+    category: 'Cloud/DevOps & Tools',
+    items: ['Git', 'Docker', 'AWS', 'Heroku', 'Firebase', 'Vercel']
+  }
+];
+
 
   return (
     <section id="about" className="min-h-screen py-20 relative z-10">
@@ -26,16 +58,13 @@ const AboutSection: React.FC = () => {
                 Passionate Developer & Innovator
               </h3>
               <p className="text-slate-300 leading-relaxed mb-6">
-               I’m Ayush Sahu, a Mechanical Engineering student at IIT Tirupati with a passion for AI, backend development, and innovation.
+               I’m Ayush Sahu, a Mechanical Engineering student at IIT Tirupati with a passion for data science, backend development, and innovation.
 
               </p>
               <p className="text-slate-300 leading-relaxed mb-6">
-               Currently working as an intern at AxoryAI, Bengaluru, where I contribute to real-world machine learning and software projects.
+               Currently working as an intern at AxoryAI, Bengaluru, where I contribute to real-world software projects.
               </p>
-              <p className="text-slate-300 leading-relaxed">
-               I specialize in building intelligent systems using Flask, FastAPI, and deep learning to solve impactful problems.
-
-              </p>
+         
             </div>
           </div>
 

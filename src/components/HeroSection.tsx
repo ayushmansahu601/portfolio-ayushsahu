@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           
           <p className="text-lg text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
             Crafting innovative solutions with cutting-edge technology. 
-            Specialized in full-stack development, machine learning, and computer vision.
+           
             Building the future, one line of code at a time.
           </p>
           

@@ -11,11 +11,7 @@ const ProjectsSection: React.FC = () => {
     : projects.filter(project => project.category === activeFilter);
 
   const categories = [
-    { key: 'all', label: 'All Projects' },
-    { key: 'fullstack', label: 'Full Stack' },
-    { key: 'ml', label: 'AI/ML' },
-    { key: 'web', label: 'Web Development' },
-    { key: 'automation', label: 'Automation' }
+    { key: 'all', label: 'All Projects' }
   ];
 
   if (isLoading) {
@@ -63,7 +59,7 @@ const ProjectsSection: React.FC = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-tech-cyan to-tech-purple mx-auto rounded-full mb-8"></div>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            A showcase of my latest work in full-stack development, AI/ML, and web applications
+            A showcase of my latest work and contributions.
           </p>
         </div>
 
@@ -100,14 +96,7 @@ const ProjectsSection: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60"></div>
                 <div className="absolute top-4 right-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                    project.category === 'fullstack' ? 'bg-tech-cyan/20 text-tech-cyan' :
-                    project.category === 'ml' ? 'bg-tech-purple/20 text-tech-purple' :
-                    project.category === 'web' ? 'bg-tech-blue/20 text-tech-blue' :
-                    'bg-green-500/20 text-green-400'
-                  }`}>
-                    {project.category.toUpperCase()}
-                  </span>
+                 {/* for right upper corner of the image */}
                 </div>
               </div>
 
